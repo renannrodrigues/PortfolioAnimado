@@ -1180,6 +1180,21 @@ header ul a:hover{
     .footer .box-icons{
         gap: 10px;
     }
+}
 
-
+.project-gif {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+    pointer-events: none; /* evita bugs no hover */
+}
+.project-vidbox {
+    width: 480px;      /* controla o tamanho */
+    height: 270px;     /* proporção 16:9 */
+    overflow: hidden;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

@@ -10,25 +10,6 @@ const hoverSign = document.querySelector('.hover-sign');
 
 const videoList = [video1, video2, video3, video4];
 
-// Função para reproduzir vídeos no hover
-videoList.forEach(function(video) {
-    if (video) { // Verifica se o vídeo existe
-        video.addEventListener("mouseover", function() {
-            video.play();
-            if (hoverSign) {
-                hoverSign.classList.add("active");
-            }
-        });
-        
-        video.addEventListener("mouseout", function() {
-            video.pause();
-            if (hoverSign) {
-                hoverSign.classList.remove("active");
-            }
-        });
-    }
-});
-
 // Menu mobile
 menu.addEventListener("click", function() {
     sideBar.classList.remove("close-sidebar");
