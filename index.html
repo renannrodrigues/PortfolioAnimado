@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RenanDev</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+<body>
+    <div class="container">
+        <video class="back-vid" autoplay loop muted playsinline src="videos/galaxy.mp4"></video>
+
+        <header data-aos="fade-down" data-aos-duration="2000">
+            <div class="left">
+                <img src="images/renanlogo.png" alt="logo">
+                <h2><span style="color: #72a1dea2;">Renan</span>Dev</h2>
+            </div>
+
+            <ul>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+            </ul>
+
+            <div class="box-icons">
+                <p><a href="https://www.instagram.com/renannrodrigues97/" target="_blank" rel="noopener noreferrer"><i class='bx bxl-instagram'></i></a></p>
+                <p><a href="https://github.com/renannrodrigues" target="_blank" rel="noopener noreferrer"><i class='bx bxl-github'></i></a></p>
+                <p><a href="https://www.linkedin.com/in/renan-rodrigues-dos-santos-6a3800398" target="_blank" rel="noopener noreferrer"><i class='bx bxl-linkedin-square'></i></a></p>
+            </div>
+
+            <div class="menu-icon">
+                <i class='bx bx-menu'></i>
+            </div>            
+        </header>
+        
+        <div class="sidebar close-sidebar">
+            <div class="close-icon">
+                <i class='bx bx-x'></i>
+            </div>
+            
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+            </ul>
+
+            <div class="social-sidebar">
+                <a href="https://www.instagram.com/renannrodrigues97/" target="_blank" rel="noopener noreferrer"><i class='bx bxl-instagram'></i></a>
+                <a href="https://github.com/renannrodrigues" target="_blank" rel="noopener noreferrer"><i class='bx bxl-github'></i></a>
+                <a href="https://www.linkedin.com/in/renan-rodrigues-dos-santos-6a3800398" target="_blank" rel="noopener noreferrer"><i class='bx bxl-linkedin-square'></i></a>
+            </div>
+        </div>
+
+        <div class="blackhole-box" data-aos="fade-down" data-aos-duration="2000">
+            <video autoplay loop muted playsinline src="videos/blackhole.mp4"></video>
+        </div>
+
+        <section class="hero" id="home">
+            <div class="hero-info autoBlur" data-aos="fade-right" data-aos-duration="1000">
+                <div class="hero-info-title" onclick="downloadCV()" style="cursor: pointer;">
+                    <i class='bx bxl-sketch'></i>
+                    Baixar Curriculo
+                </div>
+
+                <h1 data-aos="fade-right" data-aos-duration="3000">Sou <span class="gradient">Desenvolvedor</span> Full-Stack <span class="gradient">com Foco em Front-End</span></h1>
+
+                <p>Eu sou um desenvolvedor front-end com experiência em desenvolvimento de websites, mobile e software. Estudante de Análise e Desenvolvimento de Sistemas na Uniasselvi. Confira meus projetos e habilidades.</p>
+            </div>
+            
+            <div class="skills-video-box">
+                <video class="skills-video autoBlur" autoplay loop muted playsinline src="videos/hero-video.mp4"></video>
+            </div>
+        
+            <div class="scroll-down"></div>
+        </section>
+
+        <section class="info-section" id="sobre">
+            <h1 class="section-title autoDisplay">Sobre mim</h1>
+            <div class="info-cards">
+                <div class="card">
+                    <h1>Olá, eu sou Renan</h1>
+                    <p>Com 3 anos de experiência, aprimorei minhas habilidades em desenvolvimento frontend e backend, criando websites dinâmicos e responsivos. Atualmente curso Análise e Desenvolvimento de Sistemas na Uniasselvi.</p>
+                    <img src="images/grid1.png" alt="Foto de Renan">
+                </div>
+
+                <div class="card">
+                    <h1>Tecnologias</h1>
+                    <p>Eu especializo-me em uma variedade de linguagens, frameworks e ferramentas que me permitem criar aplicações robustas e escaláveis.</p>
+                    <img src="images/grid2.png" alt="Tecnologias">
+                </div>
+
+                <div class="card">
+                    <h1>Estou muito flexível com comunicação e localização em diferentes fusos horários</h1>
+                    <p>Estou baseado no Brasil, aberto a trabalho remoto em todo o mundo.</p>
+                    <video src="videos/glob.mp4" autoplay loop muted playsinline></video>
+                    <button onclick="window.open('https://wa.me/5554999061396', '_blank')"><i class='bx bx-send'></i> Entre em contato comigo</button>
+                </div>
+
+                <div class="card">
+                    <h1>Minha Paixão por Programação</h1>
+                    <p>Eu amo resolver problemas e construir coisas através do código. Programação não é apenas minha profissão — é minha paixão. Eu gosto de explorar novas tecnologias e aprimorar minhas habilidades.</p>
+                    <img src="images/grid4.png" alt="Paixão por Programação">
+                </div>
+            </div>
+        </section>
+
+        <section class="my-project" id="projetos">
+            <h1 class="section-title autoDisplay">Meus Projetos</h1>
+            <div class="project-card">
+                <div class="project-vidbox autoBlur">
+                    <video loop id="projectVideo1" src="videos/project1.mp4"></video>
+                    <div class="hover-sign"></div>
+                </div>
+                <div class="project-info fadein-left">
+                    <h1>Site <span class="gradient">MarisaStore</span> - Freelancer</h1>
+                    <p>Um site para a Marisa, de vendas, com funcionalidades de carrinho, tráfego do G4A e gerenciamento de venda.</p>
+                    <button onclick="window.open('https://marisa-store.vercel.app/')"><i class='bx bx-link-external'></i>Site</button>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-vidbox autoBlur">
+                    <video loop id="projectVideo2" src="videos/project2.mp4"></video>
+                </div>
+                <div class="project-info fadein-left">
+                    <h1>Site <span class="gradient">Serragás</span> - Freelancer</h1>
+                    <p>Um site de catálogo para a empresa Serragás mostrando um pouco sobre a empresa.</p>
+                    <button onclick="window.open('https://serragas.vercel.app/')"><i class='bx bx-link-external'></i> Site</button>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-vidbox autoBlur">
+                    <video loop id="projectVideo3" src="videos/project3.mp4"></video>
+                </div>
+                <div class="project-info fadein-left">
+                    <h1>Banda <span class="gradient">Echodome</span> - Landing page</h1>
+                    <p>Site para o Douglas kohl mostrar a banda virtual EchoDome</p>
+                    <button onclick="window.open('https://banda-echo-dome.vercel.app/')"><i class='bx bx-link-external'></i> Site</button>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-vidbox autoBlur">
+                    <video loop id="projectVideo4" src="videos/project4.MP4"></video>
+                </div>
+                <div class="project-info fadein-left">
+                    <h1>Portfólio <span class="gradient">RenanDev</span> - Portfólio responsivo</h1>
+                    <p>Projeto pessoal para criar projetos de portfólio</p>
+                    <button onclick="window.open('https://portfolio-renan-dev.vercel.app/')"><i class='bx bx-link-external'></i> Site</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="skills-section" id="habilidades">
+            <h1 class="section-title autoDisplay">Minhas Habilidades</h1>
+            <div class="skills-box autoDisplay">
+                <img class="skills-image" src="images/digital brain (2).png" alt="">
+                <div class="Designer">
+                    <h1 class="gradient">Designer <i class='bx bx-laptop'></i></h1>
+                    <p>Tenho experiência em HTML, CSS, JavaScript e ferramentas de design como Figma e Adobe XD. Meu ponto forte é combinar estética com funcionalidade para criar experiências de usuário perfeitas.</p>    
+                </div>
+                
+                <div class="coder">
+                    <h1 class="gradient">Códigos <i class='bx bx-code-block'></i></h1>
+                    <p>Eu sou habilidoso em HTML, CSS, JavaScript e frameworks como React e Node.js. Também tenho experiência com gerenciamento de banco de dados usando MongoDB e MySQL.</p>
+                </div>
+
+                <div class="slider" reverse="true" style="--width: 100px; --height: 100px; --quantity: 9;">
+                    <div class="list">
+                        <div class="item" style="--position: 1"><img src="images/1.png" alt=""></div>
+                        <div class="item" style="--position: 2"><img src="images/2.png" alt=""></div>
+                        <div class="item" style="--position: 3"><img src="images/3.webp" alt=""></div>
+                        <div class="item" style="--position: 4"><img src="images/4.png" alt=""></div>
+                        <div class="item" style="--position: 5"><img src="images/5.png" alt=""></div>
+                        <div class="item" style="--position: 6"><img src="images/6.png" alt=""></div>
+                        <div class="item" style="--position: 7"><img src="images/7.png" alt=""></div>
+                        <div class="item" style="--position: 8"><img src="images/8.png" alt=""></div>
+                        <div class="item" style="--position: 9"><img src="images/9.png" alt=""></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-section">
+            <h1 class="section-title autoDisplay">Fale comigo</h1>
+
+            <div class="social-box autoBlur">
+                <a href="https://wa.me/5554999061396" target="_blank" rel="noopener noreferrer"><i class='bx bxs-phone'></i> (54) 99906-1396</a>
+                <a href="mailto:renan.rdossantos20@yahoo.com.br"><i class='bx bxl-telegram'></i> renan.rdossantos20@yahoo.com.br</a>
+                <a href="https://www.linkedin.com/in/renan-rodrigues-dos-santos-6a3800398" target="_blank" rel="noopener noreferrer"><i class='bx bxl-linkedin-square'></i> RenanR</a>
+            </div>
+
+            <div class="contact-box autoBlur">
+                <p>Seja para criar um novo site, aprimorar sua plataforma atual ou apresentar um projeto exclusivo, estou aqui para ajudar.</p>
+            
+                <p>Nome completo</p>
+                <input id="userName" placeholder="Seu nome completo" type="text">
+
+                <p>Seu Email</p>
+                <input id="userEmail" placeholder="Seu Email" type="email">
+                
+                <p>Sua Mensagem</p>
+                <textarea id="userMessage" class="input-message" placeholder="Compartilhe suas ideias..."></textarea>
+
+                <button onclick="sendWhatsApp()">Enviar Mensagem <i class='bx bx-mail-send'></i></button>
+            </div>
+        </section> 
+
+        <section class="footer">
+            <h4>©️2026, Criado por Renan Rodrigues dos Santos</h4>
+            <div class="box-icons">
+                <p><a href="https://www.instagram.com/renannrodrigues97/" target="_blank" rel="noopener noreferrer"><i class='bx bxl-instagram'></i></a></p>
+                <p><a href="https://github.com/renannrodrigues" target="_blank" rel="noopener noreferrer"><i class='bx bxl-github'></i></a></p>
+                <p><a href="https://www.linkedin.com/in/renan-rodrigues-dos-santos-6a3800398" target="_blank" rel="noopener noreferrer"><i class='bx bxl-linkedin-square'></i></a></p>
+            </div>
+        </section>
+    </div>
+    
+    <script src="app.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+</body>
+</html>
