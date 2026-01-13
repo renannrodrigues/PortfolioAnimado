@@ -1,25 +1,32 @@
 const video1 = document.getElementById('projectVideo1');
 const video2 = document.getElementById('projectVideo2');
 const video3 = document.getElementById('projectVideo3');
+const video4 = document.getElementById('projectVideo4');
 
 const sideBar = document.querySelector('.sidebar');
 const menu = document.querySelector('.menu-icon');
 const closeIcon = document.querySelector('.close-icon');
 const hoverSign = document.querySelector('.hover-sign');
 
-const videoList = [video1, video2, video3];
+const videoList = [video1, video2, video3, video4];
 
 // Função para reproduzir vídeos no hover
 videoList.forEach(function(video) {
-    video.addEventListener("mouseover", function() {
-        video.play();
-        hoverSign.classList.add("active");
-    });
-    
-    video.addEventListener("mouseout", function() {
-        video.pause();
-        hoverSign.classList.remove("active");
-    });
+    if (video) { // Verifica se o vídeo existe
+        video.addEventListener("mouseover", function() {
+            video.play();
+            if (hoverSign) {
+                hoverSign.classList.add("active");
+            }
+        });
+        
+        video.addEventListener("mouseout", function() {
+            video.pause();
+            if (hoverSign) {
+                hoverSign.classList.remove("active");
+            }
+        });
+    }
 });
 
 // Menu mobile
@@ -54,22 +61,26 @@ function downloadCV() {
 }
 
 // Função para enviar mensagem via WhatsApp
-function sendWhatsApp() {
-    const nome = document.getElementById('userName').value;
-    const email = document.getElementById('userEmail').value;
-    const mensagem = document.getElementById('userMessage').value;
+function sendWhatsApp(event) {
+    if (event) {
+        event.preventDefault();
+    }
+    
+    const nome = document.getElementById('userName').value.trim();
+    const email = document.getElementById('userEmail').value.trim();
+    const mensagem = document.getElementById('userMessage').value.trim();
     
     // Validação básica
     if (!nome || !email || !mensagem) {
         alert('Por favor, preencha todos os campos!');
-        return;
+        return false;
     }
     
     // Validação de email
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!emailRegex.test(email)) {
         alert('Por favor, insira um email válido!');
-        return;
+        return false;
     }
     
     // Formatar mensagem para WhatsApp
@@ -85,6 +96,8 @@ function sendWhatsApp() {
     document.getElementById('userName').value = '';
     document.getElementById('userEmail').value = '';
     document.getElementById('userMessage').value = '';
+    
+    return false;
 }
 
 // Smooth scroll para links de navegação

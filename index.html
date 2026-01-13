@@ -109,6 +109,7 @@
 
         <section class="my-project" id="projetos">
             <h1 class="section-title autoDisplay">Meus Projetos</h1>
+            
             <div class="project-card">
                 <div class="project-vidbox autoBlur">
                     <video loop id="projectVideo1" src="videos/project1.mp4"></video>
@@ -117,7 +118,7 @@
                 <div class="project-info fadein-left">
                     <h1>Site <span class="gradient">MarisaStore</span> - Freelancer</h1>
                     <p>Um site para a Marisa, de vendas, com funcionalidades de carrinho, tráfego do G4A e gerenciamento de venda.</p>
-                    <button onclick="window.open('https://marisa-store.vercel.app/')"><i class='bx bx-link-external'></i>Site</button>
+                    <button onclick="window.open('https://marisa-store.vercel.app/', '_blank')"><i class='bx bx-link-external'></i>MarisaStore</button>
                 </div>
             </div>
 
@@ -128,7 +129,7 @@
                 <div class="project-info fadein-left">
                     <h1>Site <span class="gradient">Serragás</span> - Freelancer</h1>
                     <p>Um site de catálogo para a empresa Serragás mostrando um pouco sobre a empresa.</p>
-                    <button onclick="window.open('https://serragas.vercel.app/')"><i class='bx bx-link-external'></i> Site</button>
+                    <button onclick="window.open('https://serragas.vercel.app/', '_blank')"><i class='bx bx-link-external'></i> Serragás</button>
                 </div>
             </div>
 
@@ -139,18 +140,18 @@
                 <div class="project-info fadein-left">
                     <h1>Banda <span class="gradient">Echodome</span> - Landing page</h1>
                     <p>Site para o Douglas kohl mostrar a banda virtual EchoDome</p>
-                    <button onclick="window.open('https://banda-echo-dome.vercel.app/')"><i class='bx bx-link-external'></i> Site</button>
+                    <button onclick="window.open('https://banda-echo-dome.vercel.app/', '_blank')"><i class='bx bx-link-external'></i> EchoDome</button>
                 </div>
             </div>
 
             <div class="project-card">
                 <div class="project-vidbox autoBlur">
-                    <video loop id="projectVideo4" src="videos/project4.MP4"></video>
+                    <video loop id="projectVideo4" src="videos/project4.mp4"></video>
                 </div>
                 <div class="project-info fadein-left">
                     <h1>Portfólio <span class="gradient">RenanDev</span> - Portfólio responsivo</h1>
                     <p>Projeto pessoal para criar projetos de portfólio</p>
-                    <button onclick="window.open('https://portfolio-renan-dev.vercel.app/')"><i class='bx bx-link-external'></i> Site</button>
+                    <button onclick="window.open('https://portfolio-renan-dev.vercel.app/', '_blank')"><i class='bx bx-link-external'></i> RenanDev</button>
                 </div>
             </div>
         </section>
@@ -197,16 +198,18 @@
             <div class="contact-box autoBlur">
                 <p>Seja para criar um novo site, aprimorar sua plataforma atual ou apresentar um projeto exclusivo, estou aqui para ajudar.</p>
             
-                <p>Nome completo</p>
-                <input id="userName" placeholder="Seu nome completo" type="text">
+                <form id="contactForm" onsubmit="sendWhatsApp(event)">
+                    <p>Nome completo</p>
+                    <input id="userName" placeholder="Seu nome completo" type="text" required>
 
-                <p>Seu Email</p>
-                <input id="userEmail" placeholder="Seu Email" type="email">
-                
-                <p>Sua Mensagem</p>
-                <textarea id="userMessage" class="input-message" placeholder="Compartilhe suas ideias..."></textarea>
+                    <p>Seu Email</p>
+                    <input id="userEmail" placeholder="Seu Email" type="email" required>
+                    
+                    <p>Sua Mensagem</p>
+                    <textarea id="userMessage" class="input-message" placeholder="Compartilhe suas ideias..." required></textarea>
 
-                <button onclick="sendWhatsApp()">Enviar Mensagem <i class='bx bx-mail-send'></i></button>
+                    <button type="submit">Enviar Mensagem <i class='bx bx-mail-send'></i></button>
+                </form>
             </div>
         </section> 
 
